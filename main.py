@@ -1,1 +1,10 @@
-# 在这个文件下编写代码，题目具体要求见README.md文件
+weight_input=输入()
+NUM=漂浮(weight_input[:-2])
+单位=weight_input[-2:]
+kg_to_pd=2.2046
+如果单位==‘kg’：
+PD=num*kg_to_pd
+    打印(F"对应的英制重量为{PD：.3f}磅")
+Elif单位=='PD':
+kg=num/kg_to_pd
+    打印(F"对应的公制重量为{公斤：.3f}公斤")
