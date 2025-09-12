@@ -1,10 +1,10 @@
-weight_input=输入()
-NUM=漂浮(weight_input[:-2])
-单位=weight_input[-2:]
+weight_input=input()
 kg_to_pd=2.2046
-如果单位==‘kg’：
-PD=num*kg_to_pd
-    打印(F"对应的英制重量为{PD：.3f}磅")
-Elif单位=='PD':
-kg=num/kg_to_pd
-    打印(F"对应的公制重量为{公斤：.3f}公斤")
+if weight_input.endswith("kg"):
+kg = float(weight_input[:-2])
+pd = kg * kg_to_pd
+print(f"对应的英制重量为{pd:.3f}磅")
+elif weight_input.endswith("pd"):
+pd = float(weight_input[:-2])
+kg = pd / kg_to_pd
+print(f"对应的公制重量为{kg:.3f}公斤")
